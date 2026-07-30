@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    padding:20px;
+}
+
+.container{
+    width:800px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border:2px solid green;
+}
+
+h1{
+    text-align:center;
+    color:green;
+    margin-bottom:20px;
+}
+
+fieldset{
+    border:2px solid darkgreen;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:5px;
+}
+
+legend{
+    color:darkgreen;
+    font-weight:bold;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:15px;
+}
+
+.input-box{
+    width:50%;
+}
+
+.full-box{
+    width:100%;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border:2px solid green;
+    outline:none;
+}
+
+textarea{
+    resize:none;
+}
+
+.radio-group label,
+.checkbox-group label{
+    display:inline-block;
+    margin-right:20px;
+    margin-bottom:10px;
+    font-weight:normal;
+}
+
+.radio-group input,
+.checkbox-group input{
+    width:auto;
+    margin-right:5px;
+}
+
+small{
+    color:red;
+}
+
+.button-group{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button[type="submit"]{
+    background:green;
+}
+
+button[type="reset"]{
+    background:red;
+}
+
+button:hover{
+    opacity:0.8;
+}
+
+#result{
+    margin-top:20px;
+    padding:15px;
+    border:2px solid green;
+    background:#eefdee;
+}
+
+@media(max-width:768px){
+
+    .container{
+        width:100%;
+    }
+
+    .row{
+        display:block;
+    }
+
+    .input-box{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+}
